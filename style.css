@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background: url(fantasy-2049567.jpg);
+} */
+
+.page{
+    height: 650px;
+    width: 100%;
+    background: url(fantasy-2049567.jpg);
+}
+
+.header{
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    color: white;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: space-around;
+}
+.header #fsize{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    margin-top: 30px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.header #fonts{
+    position: absolute;
+    margin-left: -400px;
+    margin-top: -45px;
+    height: 20px;
+    width: 120px;
+}
+
+.header #bgcolor{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    margin-top: -45px;
+    margin-left: 150px;
+}
+.header #fgcolor{
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    margin-left: 65%;
+    margin-top: -45px;
+}
+.header .bgcolor{
+    height: 80px;
+    width: 200px;
+    margin-top: 22px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.header .bgcolor #one{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    background-color:#000000;
+    border: none;
+}
+.header .bgcolor #two{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.header .bgcolor #three{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ffbf00;
+}
+.header .bgcolor #four{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ff4040;
+}
+.header .bgcolor #five{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: #ff1493;
+}
+.header .bgcolor #six{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: #800208;
+}
+.header .bgcolor #seven{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: #0000ff;
+}
+.header .bgcolor #eight{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: #2acaea;
+}
+/* fgcolor style */
+.header .fgcolor{
+    height: 80px;
+    width: 200px;
+    margin-top: 22px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.header .fgcolor #one{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    cursor: pointer;
+}
+.header .fgcolor #two{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.header .fgcolor #three{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ffbf00;
+}
+.header .fgcolor #four{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ff4040;
+}
+.header .fgcolor #five{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: #ff1493;
+}
+.header .fgcolor #six{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: #800208;
+}
+.header .fgcolor #seven{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: #0000ff;
+}
+.header .fgcolor #eight{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: #2acaea;
+}
+#words{
+    width: 90%;
+    height: 500px;
+    margin-top:3px;
+    margin-left: 5%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+}
+#showLetter{
+    margin-top: -30px;
+    margin-left: 900px;
+    position: absolute;
+    text-transform: capitalize;
+}
+#showWord{
+    margin-top: -30px;
+    margin-left: 1100px;
+    position: absolute;
+}

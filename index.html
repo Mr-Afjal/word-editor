@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad Using HTML,CSS,Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+    <div class="header">
+        <h1>Afjal-Editor</h1>
+        <label for="" id="fonts">Font-Size</label>
+        <select id="fsize">
+            <option value="-1">size</option>
+            <option value="20">20</option>
+            <option value="26">26</option>
+            <option value="28">28</option>
+        </select>
+        <label id="bgcolor">BG-COLOR</label>
+        <div class="bgcolor">
+            <span id="one" onclick="bgC('#000000')"></span>
+            <span id="two" onclick="bgC('#ffffff')"></span>
+            <span id="three" onclick="bgC('#ffbf00')"></span>
+            <span id="four" onclick="bgC('#ff4040')"></span>
+            <span id="five" onclick="bgC('#ff1493')"></span>
+            <span id="six" onclick="bgC('#800208')"></span>
+            <span id="seven" onclick="bgC('#0000ff')"></span>
+            <span id="eight" onclick="bgC('#2acaea')"></span>
+        </div>
+        <label id="fgcolor">FG-COLOR</label>
+        <div class="fgcolor">
+            <span id="one" onclick="fgC('#000000')"></span>
+            <span id="two" onclick="fgC('#ffffff')"></span>
+            <span id="three" onclick="fgC('#ffbf00')"></span>
+            <span id="four" onclick="fgC('#ff4040')"></span>
+            <span id="five" onclick="fgC('#ff1493')"></span>
+            <span id="six" onclick="fgC('#800208')"></span>
+            <span id="seven" onclick="fgC('#0000ff')"></span>
+            <span id="eight" onclick="fgC('#2acaea')"></span>
+        </div>
+    </div>
+    <textarea id="words" cols="30" rows="10"></textarea>
+    <br>
+    <span id="showLetter">the total character is : 0</span>
+    <span id="showWord">the total words : 0</span>
+    <br>
+    </div>
+</body>
+<script>
+    function bgC(c){
+        document.getElementById('words').style.backgroundColor = c;
+    }
+    function fgC(c){
+        document.getElementById('words').style.color = c;
+    }
+     
+     var selectFontSize = document.getElementById('fsize');
+     selectFontSize.addEventListener('change', function(){
+        selectFontSize = document.getElementById('fsize').value;
+        document.getElementById('words').style.fontSize = selectFontSize + "px";
+     });
+
+     let chaR = document.getElementById('words');
+            chaR.addEventListener('input',function(){
+                let countChar = chaR.value.length
+                document.getElementById('showLetter').innerHTML = "the total character is : " + countChar;
+            })
+            chaR.addEventListener('input',function(){
+                let NOW = chaR.value;
+                    NOW = NOW.match( /\w+/g );
+                    NOW = NOW.length;
+                document.getElementById('showWord').innerHTML = "the total words : " + NOW;
+            });
+</script>
+</html>
