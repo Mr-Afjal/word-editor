@@ -13,8 +13,8 @@
         <label id="font-style">Font-Style</label>
         <select id="fstyle">
             <option value="-1">arial</option>
-            <option value="1">monotype cursiva</option>
-            <option value="2">algerian</option>
+            <option value="monotype cursiva">monotype cursiva</option>
+            <option value="algerian">algerian</option>
         </select>
         <label for="" id="fonts">Font-Size</label>
         <select id="fsize">
@@ -65,6 +65,13 @@
      selectFontSize.addEventListener('change', function(){
         selectFontSize = document.getElementById('fsize').value;
         document.getElementById('words').style.fontSize = selectFontSize + "px";
+     });
+
+    //  change font style on click
+    var selectFontStyle = document.getElementById('fstyle');
+     selectFontStyle.addEventListener('change', function(){
+        selectFontStyle = document.getElementById('fstyle').value;
+        document.getElementById('words').style.fontFamily = selectFontStyle;
      });
 
      let chaR = document.getElementById('words');
